@@ -217,7 +217,7 @@ define( [ "jquery",
 			};
 
 			// Make sure the top of the menu is visible
-			ret.y = Math.max( 0, ret.y );
+			ret.y = Math.max( rc.t, ret.y );
 			// If the height of the menu is smaller than the height of the document
 			// align the bottom with the bottom of the document
 			ret.y -= Math.min( ret.y, Math.max( 0, ret.y + menuSize.cy - $( document ).height() ) );
